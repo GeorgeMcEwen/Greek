@@ -1,0 +1,8 @@
+Intro to programming
+operators:
+
+Arithmetic
+assignment
+Equality
+Logical
+

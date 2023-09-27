@@ -1,0 +1,68 @@
+PTV Lore / Script:
+Player Name: The Lord
+Kingdom: Grimsby
+Enemy Clan: McNME
+
+Intro
+Coronation Cutscene
+
+Peasant 1
+"Lord i have no money, i cant even afford bread, Please help me."
+
+Lord
+"Why dont you have money to buy bread"
+
+Peasant 1
+"Forgive me lord, But i have been gambling in my past time and lost all my fortune."
+
+Choice 1
+Give Bread
+
+Lord
+"You can have bread this time but know that i will not help you again as i have no sympathy for your actions."
+
+Peasant 1
+"Thank you Lord, Thank you, I am forever in your debt"
+peasant 1 leaves
+
+
+Choice 2
+Refuse Bread
+Lord
+"No You have bought your issues upon yourself and you will find a way to get out of them."
+
+Peasant 1
+"But Lord..."
+
+Lord
+"Enough, you have asked and i have answered. Now go".
+peasant 1 leaves
+
+Choice 3
+imprison
+Lord
+"Gambling! Why should i care then if you willingly threw away your money. This may have flown under the previous ruler but let me tell you something
+i will not stand for it. In Fact, i am going to make an example out of you. Guards!"
+
+Guards come in 
+
+"Take him To the Jail"
+
+Peasant 1
+"WHAT...Please y..you cant"
+
+Lord 
+"I Think you'll find i can"
+"Go"
+
+Peasant 1 is led out of room
+
+Second Choice
+Peasant 2 & 3
+
+Lord 
+"Speak"
+
+
+
+

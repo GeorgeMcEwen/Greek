@@ -8,7 +8,7 @@ namespace SG
     {
         public float horizontal;
         public float vertical;
-        public float moveamount;
+        public float moveAmount;
         public float mouseX;
         public float mouseY;
 
@@ -59,7 +59,7 @@ namespace SG
         {
             horizontal = movementInput.x;
             vertical = movementInput.y;
-            moveamount = Mathf.Clamp01(Mathf.Abs(horizontal) + Mathf.Abs(vertical));
+            moveAmount = Mathf.Clamp01(Mathf.Abs(horizontal) + Mathf.Abs(vertical));
             mouseX = cameraInput.x;
             mouseY = cameraInput.y;
 
