@@ -794,6 +794,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room1
       objectReference: {fileID: 0}
+    - target: {fileID: 5148817236446094103, guid: 243934272d52c2a43ad954f13c8e3e7f, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6507901977716847365, guid: 243934272d52c2a43ad954f13c8e3e7f, type: 3}
       propertyPath: m_Layer
       value: 10
