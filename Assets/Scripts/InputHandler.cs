@@ -23,7 +23,7 @@ namespace SG
             cameraHandler = CameraHandler.singleton;
         }
 
-        private void FixedUpdate()
+        private void Update()
         {
             float delta = Time.fixedDeltaTime;
 
