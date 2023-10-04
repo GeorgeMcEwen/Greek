@@ -79,8 +79,11 @@ namespace SG
 
             if (isSprinting)
             {
-                v = 2;
-                h = horizontalMovement;
+                if(inputHandler.moveAmount > 0)
+                {
+                    v = 2;
+                    h = horizontalMovement;
+                }
             }
 
 
