@@ -1,5 +1,37 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &544558396461075442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8046993329696346123}
+  m_Layer: 0
+  m_Name: Weapon Pivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8046993329696346123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544558396461075442}
+  m_LocalRotation: {x: 0.68407816, y: -0.21783818, z: 0.4615563, w: -0.521104}
+  m_LocalPosition: {x: 0.111, y: 0.035, z: -0.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2626049855813517851}
+  m_Father: {fileID: 1432695922080228460}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 210.788, y: -87.94299, z: 65.078}
 --- !u!1 &1777274737820335830
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,8 +41,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1432695922080228460}
-  - component: {fileID: 2616079891362294729}
-  - component: {fileID: 264262693922397955}
   m_Layer: 0
   m_Name: Md_Prop_Sword_01
   m_TagString: Untagged
@@ -25,29 +55,63 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777274737820335830}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.109, z: 1.139}
+  m_LocalRotation: {x: 0.5469441, y: -0.3412135, z: 0.6179395, w: -0.45008478}
+  m_LocalPosition: {x: 0.12, y: 0.027, z: -0.067}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8046993329696346123}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 184.051, y: -99.746, z: 68.722}
+--- !u!1 &3403114668343646369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2626049855813517851}
+  - component: {fileID: 1431654279792561598}
+  - component: {fileID: 3763521316895127924}
+  m_Layer: 0
+  m_Name: Md_Prop_Sword_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2626049855813517851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3403114668343646369}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 8046993329696346123}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2616079891362294729
+--- !u!33 &1431654279792561598
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777274737820335830}
+  m_GameObject: {fileID: 3403114668343646369}
   m_Mesh: {fileID: -4019297881887596419, guid: c9e94fc3caa7f44489d5e4c9ad4b7531, type: 3}
---- !u!23 &264262693922397955
+--- !u!23 &3763521316895127924
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777274737820335830}
+  m_GameObject: {fileID: 3403114668343646369}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
