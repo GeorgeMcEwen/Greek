@@ -1108,11 +1108,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 700927256}
+  - component: {fileID: 700927257}
   - component: {fileID: 700927253}
   - component: {fileID: 700927252}
-  - component: {fileID: 700927257}
   - component: {fileID: 700927258}
   - component: {fileID: 700927259}
+  - component: {fileID: 700927260}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -1157,6 +1158,8 @@ MonoBehaviour:
   mouseX: 0
   mouseY: 0
   b_Input: 0
+  rb_Input: 0
+  rt_Input: 0
   rollFlag: 0
   sprintFlag: 0
   rollInputTimer: 0
@@ -1220,6 +1223,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightWeapon: {fileID: 11400000, guid: b7306b1b29e9f0944810789eb68eb568, type: 2}
   leftWeapon: {fileID: 11400000, guid: b7306b1b29e9f0944810789eb68eb568, type: 2}
+--- !u!114 &700927260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700927251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7083426092ce541aa036269e179d6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &769624614 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8743840707287884684, guid: b98b6c64c1e405441a270313a732723a, type: 3}
