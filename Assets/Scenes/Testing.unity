@@ -1003,9 +1003,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 411939078}
-  - component: {fileID: 411939077}
   - component: {fileID: 411939080}
   - component: {fileID: 411939079}
+  - component: {fileID: 411939077}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -7014,7 +7014,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8991929427043263361, guid: b98b6c64c1e405441a270313a732723a, type: 3}
+  - {fileID: 2100000, guid: 2bd374ca6856b5943b92bd8e236e9731, type: 2}
+  - {fileID: 2100000, guid: 335eeb94ad06bbd49a6c294f9fa183df, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
