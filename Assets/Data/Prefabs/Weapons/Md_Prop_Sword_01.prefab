@@ -75,6 +75,8 @@ GameObject:
   - component: {fileID: 2626049855813517851}
   - component: {fileID: 1431654279792561598}
   - component: {fileID: 3763521316895127924}
+  - component: {fileID: 4683405194287177994}
+  - component: {fileID: 7905833245061430080}
   m_Layer: 0
   m_Name: Md_Prop_Sword_01
   m_TagString: Untagged
@@ -147,3 +149,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4683405194287177994
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3403114668343646369}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04560102, y: 0.83102655, z: 0.2424028}
+  m_Center: {x: 0.00020490364, y: 0.48102158, z: 0.00015155718}
+--- !u!114 &7905833245061430080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3403114668343646369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba43bce319d3504ba9a5d07dfd80b69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
