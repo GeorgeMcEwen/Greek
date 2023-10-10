@@ -15,6 +15,7 @@ namespace SG
 
         [Header("Player Flags")]
         public bool isSprinting;
+        public bool canDoCombo;
 
         private void Awake()
         {
@@ -33,6 +34,7 @@ namespace SG
         {
             float delta = Time.deltaTime;
             isInteracting = anim.GetBool("isInteracting");
+            canDoCombo = anim.GetBool("canDoCombo");
 
 
             inputHandler.TickInput(delta);
