@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 0}
   itemName: Spartan_Sword
-  modelPrefab: {fileID: 919132149155446097, guid: e874dd352c2862a42a1f72f246ad28f6, type: 3}
+  modelPrefab: {fileID: 2440148388661099209, guid: aa4d5c70db8674d499a49abf47716ab2, type: 3}
   isUnarmed: 0
   OH_Light_Attack_01: OH_Light_Attack_01
   OH_Light_Attack_02: OH_Light_Attack_02
