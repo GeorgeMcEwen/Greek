@@ -1764,6 +1764,7 @@ MonoBehaviour:
   rt_Input: 0
   rollFlag: 0
   sprintFlag: 0
+  comboFlag: 0
   rollInputTimer: 0
 --- !u!4 &700927256
 Transform:
@@ -1811,6 +1812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInteracting: 0
   isSprinting: 0
+  canDoCombo: 0
 --- !u!114 &700927259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1837,6 +1839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d7083426092ce541aa036269e179d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastAttack: 
 --- !u!114 &700927261
 MonoBehaviour:
   m_ObjectHideFlags: 0
