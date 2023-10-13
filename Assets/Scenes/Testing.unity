@@ -797,7 +797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 161664291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.28, z: -5.21}
+  m_LocalPosition: {x: 0, y: 0.28, z: -5.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1818,10 +1818,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.35984364
+  m_Radius: 0.34625992
   m_Height: 3.0929766
   m_Direction: 1
-  m_Center: {x: 0.0020675957, y: 0.30098796, z: -0.03377542}
+  m_Center: {x: 0.0020675957, y: 0.30098796, z: -0.0201917}
 --- !u!4 &769624614 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8743840707287884684, guid: b98b6c64c1e405441a270313a732723a, type: 3}
@@ -6207,10 +6207,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.2800214
-  m_Height: 1.8718424
+  m_Radius: 0.3
+  m_Height: 1.8852425
   m_Direction: 1
-  m_Center: {x: 0, y: 0.9119096, z: -0.0023343167}
+  m_Center: {x: 0, y: 0.87966096, z: 0}
 --- !u!54 &5866666021284674459
 Rigidbody:
   m_ObjectHideFlags: 0
