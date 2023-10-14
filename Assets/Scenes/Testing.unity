@@ -6686,6 +6686,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4401790677100440038, guid: 124f476a55f99204786f5190e8242630, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -439
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275422260667890222, guid: 124f476a55f99204786f5190e8242630, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -275
+      objectReference: {fileID: 0}
     - target: {fileID: 8042365374859546481, guid: 124f476a55f99204786f5190e8242630, type: 3}
       propertyPath: m_Name
       value: Player UI
