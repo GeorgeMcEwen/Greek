@@ -1455,6 +1455,9 @@ MonoBehaviour:
   targetTransform: {fileID: 700927256}
   cameraTransform: {fileID: 161664294}
   cameraPivotTransform: {fileID: 1590289231}
+  ignoreLayers:
+    serializedVersion: 2
+    m_Bits: 0
   lookSpeed: 0.1
   followSpeed: 0.1
   pivotSpeed: 0.03
@@ -1672,6 +1675,7 @@ MonoBehaviour:
   mouseX: 0
   mouseY: 0
   b_Input: 0
+  a_Input: 0
   rb_Input: 0
   rt_Input: 0
   d_Pad_Up: 0
@@ -1752,6 +1756,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 53fbe703e453bb449b0ab4634d5846fa, type: 2}
   currentRightWeaponIndex: -1
   currentLeftWeaponIndex: -1
+  weaponInventory: []
 --- !u!114 &700927260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2737,6 +2742,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5c8f809006ed59d4d901679b4eaa146d, type: 3}
   m_PrefabInstance: {fileID: 686295599}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1336162019
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7418274517716309537, guid: 6ed6315bf14d0ce489e44e4041a6e0fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418274517716309537, guid: 6ed6315bf14d0ce489e44e4041a6e0fb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418274517716309537, guid: 6ed6315bf14d0ce489e44e4041a6e0fb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.879
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418274517716309537, guid: 6ed6315bf14d0ce489e44e4041a6e0fb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418274517716309537, guid: 6ed6315bf14d0ce489e44e4041a6e0fb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418274517716309537, guid: 6ed6315bf14d0ce489e44e4041a6e0fb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418274517716309537, guid: 6ed6315bf14d0ce489e44e4041a6e0fb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418274517716309537, guid: 6ed6315bf14d0ce489e44e4041a6e0fb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418274517716309537, guid: 6ed6315bf14d0ce489e44e4041a6e0fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418274517716309537, guid: 6ed6315bf14d0ce489e44e4041a6e0fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418274517716309537, guid: 6ed6315bf14d0ce489e44e4041a6e0fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418274517716309548, guid: 6ed6315bf14d0ce489e44e4041a6e0fb, type: 3}
+      propertyPath: m_Name
+      value: Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418274517716309550, guid: 6ed6315bf14d0ce489e44e4041a6e0fb, type: 3}
+      propertyPath: m_Radius
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418274517716309550, guid: 6ed6315bf14d0ce489e44e4041a6e0fb, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418274517716309550, guid: 6ed6315bf14d0ce489e44e4041a6e0fb, type: 3}
+      propertyPath: m_Center.z
+      value: 0.03
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6ed6315bf14d0ce489e44e4041a6e0fb, type: 3}
 --- !u!4 &1339522725 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5044496726641801913, guid: b98b6c64c1e405441a270313a732723a, type: 3}

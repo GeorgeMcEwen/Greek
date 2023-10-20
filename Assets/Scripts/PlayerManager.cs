@@ -40,6 +40,8 @@ namespace SG
             inputHandler.TickInput(delta);
             playerLocomotion.HandleMovement(delta);
             playerLocomotion.HandleRollingAndSprinting(delta);
+
+            CheckForInteractableObject();
         }
 
        void FixedUpdate()
@@ -63,8 +65,33 @@ namespace SG
             inputHandler.d_Pad_Down = false;
             inputHandler.d_Pad_Left = false;
             inputHandler.d_Pad_Right = false;
+            inputHandler.a_Input = false;
         }
 
+        public void CheckForInteractableObject()
+        {
+            RaycastHit hit;
+
+            if(Physics.SphereCast(transform.position, 0.3f, transform.forward, out hit, 1f, cameraHandler.ignoreLayers))
+            {
+                if (hit.collider.tag == "Interactable")
+                {
+                    Interactable interactableObject = hit.collider.GetComponent<Interactable>();
+
+                    if(interactableObject != null)
+                    {
+                        string interactable = interactableObject.interactableText;
+                        //Set the UI Text to the interactable objects text
+                        //Set The Text Pop Up To True
+
+                        if (inputHandler.a_Input)
+                        {
+                            hit.collider.GetComponent<Interactable>().Interact(this);
+                        }
+                    }
+                }
+            }
+        }
        
         
     }

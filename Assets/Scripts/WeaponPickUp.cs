@@ -12,7 +12,7 @@ namespace SG
         {
             base.Interact(playerManager);
 
-            // Pick up the item and add it to the players inventory
+            PickUpItem(playerManager);
         }
 
         private void PickUpItem(PlayerManager playerManager)
@@ -28,6 +28,7 @@ namespace SG
             playerLocomotion.rigidbody.velocity = Vector3.zero; //Stops the player from moving whilst picking up an item
             animatorHandler.PlayTargetAnimation("Pick Up Item", true); //Plays the animation of looting the item
             playerInventory.weaponInventory.Add(weapon);
+            Destroy(gameObject);
 
 
         }
