@@ -1264,9 +1264,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1022437278510187503, guid: bcf358e6ad6de4e418c7c832157b87df, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -733
+      objectReference: {fileID: 0}
     - target: {fileID: 1645527274379292281, guid: bcf358e6ad6de4e418c7c832157b87df, type: 3}
       propertyPath: m_Name
       value: Stamina Bar Fill
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954390226783880327, guid: bcf358e6ad6de4e418c7c832157b87df, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -854
+      objectReference: {fileID: 0}
+    - target: {fileID: 2330668797924524385, guid: bcf358e6ad6de4e418c7c832157b87df, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -609
       objectReference: {fileID: 0}
     - target: {fileID: 2332445520599218043, guid: bcf358e6ad6de4e418c7c832157b87df, type: 3}
       propertyPath: m_Name
@@ -1375,6 +1387,10 @@ PrefabInstance:
     - target: {fileID: 4898863506391374758, guid: bcf358e6ad6de4e418c7c832157b87df, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219524503732555815, guid: bcf358e6ad6de4e418c7c832157b87df, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -733
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcf358e6ad6de4e418c7c832157b87df, type: 3}
@@ -1765,7 +1781,7 @@ MonoBehaviour:
   maxHealth: 0
   currentHealth: 0
   staminaLevel: 10
-  maxStamina: 100
+  maxStamina: 0
   currentStamina: 0
 --- !u!136 &700927262
 CapsuleCollider:
