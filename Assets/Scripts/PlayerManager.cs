@@ -80,7 +80,7 @@ namespace SG
 
                     if(interactableObject != null)
                     {
-                        string interactable = interactableObject.interactableText;
+                        string interactableText = interactableObject.interactableText;
                         //Set the UI Text to the interactable objects text
                         //Set The Text Pop Up To True
 
