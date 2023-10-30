@@ -14,7 +14,7 @@ namespace SG
 
         public bool b_Input;
         public bool a_Input;
-        public bool rb_Input;
+        public bool rb_Input;   
         public bool rt_Input;
         public bool d_Pad_Up;
         public bool d_Pad_Down;
