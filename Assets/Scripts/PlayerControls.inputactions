@@ -109,6 +109,15 @@
             "id": "6465c183-2f0c-4b4e-b8b7-5f356aff2868",
             "actions": [
                 {
+                    "name": "Inventory",
+                    "type": "Button",
+                    "id": "f3af4097-d72a-4486-ae03-586688943052",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Roll",
                     "type": "Button",
                     "id": "9903e8a4-5389-4011-9706-617ec64e67cc",
@@ -148,28 +157,6 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "a7d9b157-23b4-4261-be35-ace37828e561",
-                    "path": "<Gamepad>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Roll",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d560cb0c-8c29-4a8e-8c95-e98d3a805141",
-                    "path": "<Keyboard>/leftShift",
-                    "interactions": "Tap",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Roll",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "22f62cfd-855c-40cd-96b5-5dab214aa791",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
@@ -198,6 +185,39 @@
                     "processors": "",
                     "groups": "",
                     "action": "A",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2f5ede75-2815-4e71-9321-ab92fd8dcc5c",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Inventory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a7d9b157-23b4-4261-be35-ace37828e561",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d560cb0c-8c29-4a8e-8c95-e98d3a805141",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

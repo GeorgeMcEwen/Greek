@@ -71,6 +71,7 @@ namespace SG
             inputHandler.d_Pad_Left = false;
             inputHandler.d_Pad_Right = false;
             inputHandler.a_Input = false;
+            inputHandler.inventory_Input = false;
         }
 
         public void CheckForInteractableObject()
