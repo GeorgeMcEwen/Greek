@@ -46,7 +46,7 @@ namespace SG
             playerLocomotion.HandleMovement(delta);
             playerLocomotion.HandleRollingAndSprinting(delta);
 
-            CheckForInteractableObject();
+            //CheckForInteractableObject();
         }
 
        void FixedUpdate()
@@ -74,7 +74,7 @@ namespace SG
             inputHandler.inventory_Input = false;
         }
 
-        public void CheckForInteractableObject()
+/*        public void CheckForInteractableObject()
         {
             RaycastHit hit;
 
@@ -108,9 +108,43 @@ namespace SG
                     itemInteractableGameObject.SetActive(false);
                 }
             }
+        }*/
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if(other.gameObject.tag == "Interactable")
+            {
+                Interactable interactableObject = other.GetComponent<Interactable>();
+
+                if (interactableObject != null)
+                {
+                    string interactableText = interactableObject.interactableText;
+                    interactableUI.interactableText.text = interactableText;
+                    interactableUIGameObject.SetActive(true);
+
+                    if (inputHandler.a_Input)
+                    {
+                        other.GetComponent<Interactable>().Interact(this);
+                    }
+                }
+            }
         }
-       
-        
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.gameObject.tag == "Interactable")
+            {
+                if (interactableUIGameObject != null)
+                {
+                    interactableUIGameObject.SetActive(false);
+                }
+                if (itemInteractableGameObject != null && inputHandler.a_Input)
+                {
+                    itemInteractableGameObject.SetActive(false);
+                }
+            }
+
+        }
+
     }
 }
 
