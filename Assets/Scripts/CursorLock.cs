@@ -13,9 +13,4 @@ public class CursorLock : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        Cursor.visible = false;
-    }
 }
