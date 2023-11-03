@@ -11,17 +11,20 @@ public class MainMenuScript : MonoBehaviour
     {
         SceneManager.LoadScene("Testing");
     }
-  public void QuitGame()
+    public void QuitGame()
     {
         Application.Quit();
     }
 
-  public void StartMenu(GameObject objToEnable)
+    public void StartMenu(GameObject objToEnable)
     {
         objToEnable.SetActive(true);
         Destroy(startButton);
     }
 
+    public void PlayGongSound()
+    {
 
+    }
 
 }
