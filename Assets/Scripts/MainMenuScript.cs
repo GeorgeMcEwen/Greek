@@ -24,7 +24,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void PlayGongSound()
     {
-
+     
     }
 
 }
