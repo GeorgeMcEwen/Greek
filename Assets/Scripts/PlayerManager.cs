@@ -122,13 +122,24 @@ namespace SG
                     interactableUI.interactableText.text = interactableText;
                     interactableUIGameObject.SetActive(true);
 
-                    if (inputHandler.a_Input)
-                    {
-                        other.GetComponent<Interactable>().Interact(this);
-                    }
                 }
             }
         }
+
+        private void OnTriggerStay(Collider other)
+        {
+            if (other.gameObject.tag == "Interactable")
+            {
+                //if (inputHandler.a_Input)
+                if(Input.GetKeyDown(KeyCode.E))
+                {
+                    print("hndsoic");
+                    other.GetComponent<Interactable>().Interact(this);
+                }
+            }
+
+        }
+
         private void OnTriggerExit(Collider other)
         {
             if (other.gameObject.tag == "Interactable")
