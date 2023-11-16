@@ -75,7 +75,7 @@ namespace SG
 
         public void TickInput(float delta)
         {
-            moveInput(delta);
+            HandleMoveInput(delta);
             HandleRollInput(delta);
             HandleAttackInput(delta);
             HandleQuickSlotsInput();
@@ -84,7 +84,7 @@ namespace SG
             HandleLockOnInput();
         }
        
-        private void moveInput(float delta)
+        private void HandleMoveInput(float delta)
         {
             horizontal = movementInput.x;
             vertical = movementInput.y;
@@ -228,6 +228,8 @@ namespace SG
                     cameraHandler.currentLockOnTarget = cameraHandler.rightLockTarget;
                 }
             }
+
+            cameraHandler.SetCameraHeight();
         }
 
     }
