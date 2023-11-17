@@ -16,6 +16,7 @@ namespace SG
         public bool a_Input;
         public bool rb_Input;   
         public bool rt_Input;
+        public bool lb_Input;
         public bool inventory_Input;
         public bool lockOnInput;
         public bool right_Stick_Right_Input;
@@ -60,9 +61,10 @@ namespace SG
                 inputActions = new PlayerControls();
                 inputActions.PlayerMovement.Movement.performed += inputActions => movementInput = inputActions.ReadValue<Vector2>();
                 inputActions.PlayerMovement.Camera.performed += i => cameraInput = i.ReadValue<Vector2>();
-                //inputActions.PlayerActions.LockOn.performed += i => lockOnInput = true;
-                //inputActions.PlayerMovement.LockOnTargetRight.performed += i => right_Stick_Right_Input = true;
-                //inputActions.PlayerMovement.LockOnTargetLeft.performed += i => right_Stick_Left_Input = true;
+                inputActions.PlayerActions.LB.performed += i => lb_Input = true;
+                inputActions.PlayerActions.LockOn.performed += i => lockOnInput = true;
+                inputActions.PlayerMovement.LockOnTargetRight.performed += i => right_Stick_Right_Input = true;
+                inputActions.PlayerMovement.LockOnTargetLeft.performed += i => right_Stick_Left_Input = true;
             }
 
             inputActions.Enable();
