@@ -91,8 +91,9 @@ namespace SG
                 targetRotation = Quaternion.Euler(rotation);
                 cameraPivotTransform.localRotation = targetRotation;
             }
-            else
+            else if(nearestLockOnTarget != null)
             {
+                if (currentLockOnTarget == null) currentLockOnTarget = nearestLockOnTarget; //Huda's hack
                 float velocity = 0;
 
                 Vector3 dir = currentLockOnTarget.position - transform.position;
@@ -186,22 +187,24 @@ namespace SG
                 }
 
 
-                if (inputHandler.lockOnFlag)
+                if (inputHandler.lockOnFlag && nearestLockOnTarget != null)
                 {
+                    if(currentLockOnTarget == null) currentLockOnTarget = nearestLockOnTarget; //Huda's hack
                     Vector3 relativeEnemyPosition = currentLockOnTarget.InverseTransformPoint(availableTargets[k].transform.position);
                     var distanceFromLeftTarget = currentLockOnTarget.transform.position.x - availableTargets[k].transform.position.x;
                     var distanceFromRightTarget = currentLockOnTarget.transform.position.x + availableTargets[k].transform.position.x;
 
-                    if(relativeEnemyPosition.x > 0.00 && distanceFromLeftTarget < shortestDistanceOfLeftTarget)
+                    if (relativeEnemyPosition.x > 0.00 && distanceFromLeftTarget < shortestDistanceOfLeftTarget)
                     {
                         shortestDistanceOfLeftTarget = distanceFromLeftTarget;
                         leftLockTarget = availableTargets[k].lockOnTransform;
                     }
-                    if(relativeEnemyPosition.x < 0.00 && distanceFromRightTarget < shortestDistanceOfRightTarget)
+                    if (relativeEnemyPosition.x < 0.00 && distanceFromRightTarget < shortestDistanceOfRightTarget)
                     {
                         shortestDistanceOfRightTarget = distanceFromRightTarget;
                         rightLockTarget = availableTargets[k].lockOnTransform;
                     }
+
                 }
             }
         }

@@ -66,7 +66,7 @@ namespace SG
                 inputActions.PlayerMovement.Movement.performed += inputActions => movementInput = inputActions.ReadValue<Vector2>();
                 inputActions.PlayerMovement.Camera.performed += i => cameraInput = i.ReadValue<Vector2>();
                 inputActions.PlayerActions.LB.performed += i => lb_Input = true;
-                inputActions.PlayerActions.LockOn.performed += i => lockOnInput = true;
+                inputActions.PlayerActions.LockOn.performed += i => { lockOnInput = true;  };
                 inputActions.PlayerMovement.LockOnTargetRight.performed += i => right_Stick_Right_Input = true;
                 inputActions.PlayerMovement.LockOnTargetLeft.performed += i => right_Stick_Left_Input = true;
                 inputActions.PlayerActions.Y.performed += inputActions => y_Input = true;
@@ -203,7 +203,7 @@ namespace SG
             {
                 cameraHandler.ClearLockOnTargets();
                 lockOnInput = false;
-                lockOnFlag = true;
+                //lockOnFlag = true;
                 cameraHandler.HandleLockOn();
                 if(cameraHandler.nearestLockOnTarget != null)
                 {

@@ -52,7 +52,7 @@ namespace SG
 
         private void HandleRotation(float delta)
         {
-            if (inputHandler.lockOnFlag)
+            if (inputHandler.lockOnFlag && cameraHandler.currentLockOnTarget != null)
             {
                 if (inputHandler.sprintFlag || inputHandler.rollFlag)
                 {
