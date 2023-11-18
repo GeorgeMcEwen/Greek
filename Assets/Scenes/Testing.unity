@@ -2725,7 +2725,7 @@ GameObject:
   - component: {fileID: 700927259}
   - component: {fileID: 700927260}
   - component: {fileID: 700927261}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15316,6 +15316,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThePlayerModel
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b98b6c64c1e405441a270313a732723a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: b98b6c64c1e405441a270313a732723a, type: 3}
       propertyPath: m_Controller
       value: 
@@ -20415,6 +20419,9 @@ MonoBehaviour:
   healthLevel: 10
   maxHealth: 0
   currentHealth: 0
+  staminaLevel: 10
+  maxStamina: 0
+  currentStamina: 0
 --- !u!114 &5866666021284674461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20428,7 +20435,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lockOnTransform: {fileID: 469810822}
-  detectionRadius: 0
+  detectionRadius: 10
+  maximumDetectionAngle: 50
+  minimumDetectionAngle: -50
 --- !u!114 &5866666021284674462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20441,6 +20450,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a35b9b8c50e6e48b1ba784897a82e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentTarget: {fileID: 0}
+  detectionLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &5924637764756601475
 GameObject:
   m_ObjectHideFlags: 0

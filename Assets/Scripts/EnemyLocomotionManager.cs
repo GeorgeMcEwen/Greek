@@ -8,7 +8,8 @@ namespace SG
     {
         EnemyManager enemyManager;
 
-        LayerMask detectionLayer;
+        public CharacterStats currentTarget;
+        public LayerMask detectionLayer;
 
         private void Awake()
         {
@@ -22,7 +23,20 @@ namespace SG
 
             for (int i = 0; i < colliders.Length; i++)
             {
+                CharacterStats characterStats = colliders[i].GetComponent<CharacterStats>();
 
+                if(characterStats != null)
+                {
+                    //CHECK FOR TEAM ID
+
+                    Vector3 targetDirection = characterStats.transform.position - transform.position;
+                    float viewableAngle = Vector3.Angle(targetDirection, transform.forward);
+
+                    if(viewableAngle > enemyManager.minimumDetectionAngle && viewableAngle < enemyManager.maximumDetectionAngle)
+                    {
+                        currentTarget = characterStats;
+                    }
+                }
             }
 
         }
