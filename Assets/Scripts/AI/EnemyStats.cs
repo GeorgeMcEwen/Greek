@@ -29,6 +29,9 @@ namespace SG
 
         public void TakeDamage(int damage)
         {
+            if (isDead)
+                return;
+
             currentHealth = currentHealth - damage;
 
             animator.Play("Damage_01");
@@ -37,6 +40,7 @@ namespace SG
             {
                 currentHealth = 0;
                 animator.Play("Dead_01");
+                isDead = true;
                 //Handle Player Death
 
 
