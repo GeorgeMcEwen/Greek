@@ -7,7 +7,7 @@ namespace SG
     public class EnemyManager : CharacterManager
     {
         EnemyLocomotionManager enemyLocomotionManager;
-        bool isPerformingAction;
+        public bool isPreformingAction;
 
         [Header("A.I Settings")]
         public float detectionRadius = 20;
@@ -22,6 +22,11 @@ namespace SG
 
         private void Update()
         {
+
+        }
+
+        private void FixedUpdate()
+        {
             HandleCurrentAction();
         }
 
@@ -31,9 +36,15 @@ namespace SG
             {
                 enemyLocomotionManager.HandleDetection();
             }
+            else
+            {
+                enemyLocomotionManager.HandleMoveToTarget();
+            }
         }
+
         private void OnDrawGizmosSelected()
         {
+            //this code is just for dev stuff, so we can see the raidus of the enemy tracking radar
             Gizmos.color = Color.red; //replace red with whatever color you prefer
             Gizmos.DrawWireSphere(transform.position, detectionRadius);
         }
