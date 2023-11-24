@@ -10,6 +10,7 @@ namespace SG
         Animator anim;
         CameraHandler cameraHandler;
         PlayerStats playerStats;
+        AnimatorHandler animatorHandler;
         PlayerLocomotion playerLocomotion;
 
         InteractableUI interactableUI;
@@ -26,11 +27,8 @@ namespace SG
         private void Awake()
         {
             cameraHandler = CameraHandler.singleton;
-        }
-
-        void Start()
-        {
             inputHandler = GetComponent<InputHandler>();
+            animatorHandler = GetComponentInChildren<AnimatorHandler>();
             anim = GetComponentInChildren<Animator>();
             playerStats = GetComponent<PlayerStats>();
             playerLocomotion = GetComponent<PlayerLocomotion>();
@@ -47,6 +45,7 @@ namespace SG
 
 
             inputHandler.TickInput(delta);
+            animatorHandler.canRotate = anim.GetBool("canRotate");
             playerLocomotion.HandleMovement(delta);
             playerLocomotion.HandleRollingAndSprinting(delta);
             playerStats.RegenerateStamina();
@@ -59,6 +58,8 @@ namespace SG
        void FixedUpdate()
         {
             float delta = Time.fixedDeltaTime;
+
+            playerLocomotion.HandleRotation(delta);
 
             if (cameraHandler != null)
             {
