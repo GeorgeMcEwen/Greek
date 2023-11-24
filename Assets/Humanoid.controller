@@ -146,6 +146,7 @@ AnimatorState:
   - {fileID: -1560423772137835878}
   - {fileID: -5191542303262382983}
   - {fileID: 7038149412132189998}
+  - {fileID: 3350466713963939682}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -603,6 +604,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+  - m_Name: canRotate
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   - m_Name: canDoCombo
     m_Type: 4
     m_DefaultFloat: 0
@@ -942,6 +949,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetBool: 
   status: 0
+--- !u!114 &3350466713963939682
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6010f0f9d22c7fb44ab8b6cf32fae62b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetBool: canRotate
+  status: 1
 --- !u!114 &3765762471551546343
 MonoBehaviour:
   m_ObjectHideFlags: 1

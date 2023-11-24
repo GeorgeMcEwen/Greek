@@ -74283,8 +74283,22 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 2.3333333
+    functionName: CanRotate
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 2.5333333
     functionName: OpenRightDamageCollider
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2.5333333
+    functionName: StopRotation
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

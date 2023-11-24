@@ -20922,7 +20922,7 @@ MonoBehaviour:
   enemyRigidBody: {fileID: 0}
   isPreformingAction: 0
   distanceFromTarget: 0
-  rotationSpeed: 15
+  rotationSpeed: 20
   maximumAttackRange: 1.5
   detectionRadius: 10
   maximumDetectionAngle: 50
@@ -20957,6 +20957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
+  canRotate: 0
 --- !u!82 &5866666021284674464
 AudioSource:
   m_ObjectHideFlags: 0
