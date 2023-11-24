@@ -4464,6 +4464,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46d1b8b4454d9fd48a92c408bcabc3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackState: {fileID: 2070563288}
+  pursueTargetState: {fileID: 1200919349}
 --- !u!1 &1171087579
 GameObject:
   m_ObjectHideFlags: 0
@@ -4545,6 +4547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b9ec9c842e24f834e3faa46b440b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combatStanceState: {fileID: 1162620353}
 --- !u!1 &1202581506
 GameObject:
   m_ObjectHideFlags: 0
@@ -16986,6 +16989,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 690a1473ba9972c40a0682d22b0d5a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  combatStanceState: {fileID: 1162620353}
+  enemyAttacks:
+  - {fileID: 11400000, guid: a01a654dedd938740818c0b48121f451, type: 2}
+  - {fileID: 11400000, guid: 5cd1fedd693a8714f901c22dbaffbf1d, type: 2}
+  currentAttack: {fileID: 0}
 --- !u!1 &2110041938
 GameObject:
   m_ObjectHideFlags: 0
@@ -20910,10 +20918,16 @@ MonoBehaviour:
   lockOnTransform: {fileID: 469810822}
   currentState: {fileID: 351698462}
   currentTarget: {fileID: 0}
+  navmeshAgent: {fileID: 0}
+  enemyRigidBody: {fileID: 0}
   isPreformingAction: 0
+  distanceFromTarget: 0
+  rotationSpeed: 15
+  maximumAttackRange: 1.5
   detectionRadius: 10
   maximumDetectionAngle: 50
   minimumDetectionAngle: -50
+  viewableAngle: 0
   currentRecoveryTime: 0
 --- !u!114 &5866666021284674462
 MonoBehaviour:
@@ -20927,14 +20941,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a35b9b8c50e6e48b1ba784897a82e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  navmeshAgent: {fileID: 0}
-  enemyRigidBody: {fileID: 0}
   detectionLayer:
     serializedVersion: 2
     m_Bits: 512
-  distanceFromTarget: 0
-  stoppingDistance: 3
-  rotationSpeed: 100
 --- !u!114 &5866666021284674463
 MonoBehaviour:
   m_ObjectHideFlags: 0
