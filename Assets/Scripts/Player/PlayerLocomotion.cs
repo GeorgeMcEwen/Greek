@@ -8,6 +8,7 @@ namespace SG
     {
         CameraHandler cameraHandler;
         PlayerManager playerManager;
+        PlayerStats playerStats;
         Transform cameraObject;
         InputHandler inputHandler;
         Vector3 moveDirection;
@@ -31,17 +32,25 @@ namespace SG
         [SerializeField]
         float rotationSpeed = 10;
 
+        [Header("Stamina Costs")]
+        [SerializeField]
+        int rollStaminaCost = 15;
+        int backstepStaminaCost = 12;
+        int sprintStaminaCost = 1;
+        
+
 
         private void Awake()
         {
             cameraHandler = FindObjectOfType<CameraHandler>();
-        }
-        void Start()
-        {
             playerManager = GetComponent<PlayerManager>();
+            playerStats = GetComponent<PlayerStats>();
             rigidbody = GetComponent<Rigidbody>();
             inputHandler = GetComponent<InputHandler>();
             animatorHandler = GetComponentInChildren<AnimatorHandler>();
+        }
+        void Start()
+        {
             cameraObject = Camera.main.transform;
             myTransform = transform;
             animatorHandler.Initialize();
@@ -132,6 +141,7 @@ namespace SG
                 speed = sprintSpeed;
                 playerManager.isSprinting = true;
                 moveDirection *= speed;
+                playerStats.TakeStaminaDamage(sprintStaminaCost);
             }
             else
             {
@@ -166,6 +176,9 @@ namespace SG
             if (animatorHandler.anim.GetBool("isInteracting"))
                 return;
 
+            if (playerStats.currentStamina <= 0)
+                return;
+
             if (inputHandler.rollFlag)
             {
                 moveDirection = cameraObject.forward * inputHandler.vertical;
@@ -177,10 +190,12 @@ namespace SG
                     moveDirection.y = 0;
                     Quaternion rollRotation = Quaternion.LookRotation(moveDirection);
                     myTransform.rotation = rollRotation;
+                    playerStats.TakeStaminaDamage(rollStaminaCost);
                 }
                 else
                 {
                     animatorHandler.PlayTargetAnimation("Backstep", true);
+                    playerStats.TakeStaminaDamage(backstepStaminaCost);
                 }
             }
         }
