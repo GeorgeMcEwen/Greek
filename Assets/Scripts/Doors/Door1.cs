@@ -6,12 +6,12 @@ using UnityEngine;
 public class Door1 : MonoBehaviour
 {
     public GameObject Door;
-    private void OnCollisionStay(Collision other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.CompareTag("Door"))
+        if (collision.gameObject.tag== "")
         {
             Door.SetActive(false);
-            Destroy(Door);
+            Debug.Log("Yes");
         }
     }
 }
