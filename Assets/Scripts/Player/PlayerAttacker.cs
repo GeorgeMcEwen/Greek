@@ -10,6 +10,7 @@ namespace SG
         PlayerStats playerStats;
         InputHandler inputHandler;
         WeaponSlotManager weaponSlotManager;
+        PlayerManager playerManager;
         public string lastAttack;
 
         private void Awake()
@@ -18,6 +19,7 @@ namespace SG
             playerStats = GetComponent<PlayerStats>();
             weaponSlotManager = GetComponentInChildren<WeaponSlotManager>();
             inputHandler = GetComponent<InputHandler>();
+            playerManager = GetComponentInParent<PlayerManager>();
         }
 
         public void HandleWeaponCombo(WeaponItem weapon)
@@ -80,6 +82,25 @@ namespace SG
                 lastAttack = weapon.OH_Heavy_Attack_01;
             }
         }
+
+        public void HandleLBAction() //Handle Blocking
+        {
+            PerformLBBlockingAction();
+        }
+
+        #region Defense Actions
+        private void PerformLBBlockingAction()
+        {
+            if (playerManager.isInteracting) 
+                return;
+
+            if (playerManager.isBlocking)
+                return;
+
+            animatorHandler.PlayTargetAnimation("straight_sword_th_guard_block_medium_01", false, true);
+            playerManager.isBlocking = true;
+        }
+        #endregion
     }
 }
 

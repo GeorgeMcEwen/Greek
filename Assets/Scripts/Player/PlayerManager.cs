@@ -23,6 +23,7 @@ namespace SG
         public bool isSprinting;
         public bool canDoCombo;
         public bool isInvulnerable;
+        public bool isBlocking;
 
         private void Awake()
         {
@@ -42,6 +43,7 @@ namespace SG
             isInteracting = anim.GetBool("isInteracting");
             isInvulnerable = anim.GetBool("isInvulnerable");
             canDoCombo = anim.GetBool("canDoCombo");
+            anim.SetBool("isBlocking", isBlocking);
 
 
             inputHandler.TickInput(delta);
