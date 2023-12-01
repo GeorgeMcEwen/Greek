@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Interactable
   - Door
+  - DoorColl
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,7 @@ public class Door1 : MonoBehaviour
     public GameObject Door;
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag== "")
+        if (collision.gameObject.tag== "DoorColl")
         {
             Door.SetActive(false);
             Debug.Log("Yes");
