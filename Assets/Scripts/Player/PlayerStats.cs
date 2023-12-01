@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace SG
 {
@@ -16,6 +18,9 @@ namespace SG
 
         public float staminaRegenerationAmount = 1;
         public float staminaRegenTimer = 0;
+
+        public float deathTimer = 0;
+        public string currentLevel;
 
         private void Awake()
         {
@@ -35,6 +40,20 @@ namespace SG
             maxStamina = SetMaxStaminaFromStaminaLevel();
             currentStamina = maxStamina;
             staminaBar.SetMaxStamina(maxStamina);
+        }
+
+        private void Update()
+        {
+            if (isDead == true)
+            {
+                deathTimer += Time.deltaTime;
+                if (deathTimer > 3)
+                {
+                    SceneManager.LoadScene(currentLevel);
+                    deathTimer = 0;
+                }
+
+            }
         }
 
         private int SetMaxHealthFromHealthLevel()

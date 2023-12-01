@@ -44,6 +44,7 @@ namespace SG
         BlockingCollider blockingCollider;
         WeaponSlotManager weaponSlotManager;
         CameraHandler cameraHandler;
+        AnimatorHandler animatorHandler;
         UIManager uiManager;
 
         Vector2 movementInput;
@@ -57,6 +58,7 @@ namespace SG
             playerStats = GetComponent<PlayerStats>();
             blockingCollider = GetComponentInChildren<BlockingCollider>();
             weaponSlotManager = GetComponentInChildren<WeaponSlotManager>();
+            animatorHandler = GetComponentInChildren<AnimatorHandler>();
             uiManager = FindObjectOfType<UIManager>();
             cameraHandler = FindObjectOfType<CameraHandler>();
         }
@@ -161,6 +163,8 @@ namespace SG
                         return;
                     if (playerManager.canDoCombo)
                         return;
+
+                    animatorHandler.anim.SetBool("isUsingRightHand", true);
                     playerAttacker.HandleLightAttack(playerInventory.rightWeapon);
                 }
             }
