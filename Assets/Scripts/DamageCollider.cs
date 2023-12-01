@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 namespace SG
 {
@@ -33,6 +34,23 @@ namespace SG
             if (collision.tag == "Player")
             {
                 PlayerStats playerStats = collision.GetComponent<PlayerStats>();
+                CharacterManager enemyCharacterManager = collision.GetComponent<CharacterManager>();
+                BlockingCollider shield = collision.transform.GetComponentInChildren<BlockingCollider>();
+
+                if(enemyCharacterManager != null)
+                {
+                    if(shield != null && enemyCharacterManager.isBlocking)
+                    {
+                        float physicalDamageAfterBlock = currentWeaponDamage -
+                            (currentWeaponDamage * shield.blockingPhysicalDamageAbsorption) / 100;
+
+                        if(playerStats != null)
+                        {
+                            playerStats.TakeDamage(Mathf.RoundToInt(physicalDamageAfterBlock), "Block Guard");
+                            return;
+                        }
+                    }
+                }
 
                 if (playerStats != null)
                 {
@@ -43,8 +61,10 @@ namespace SG
             if (collision.tag == "Enemy")
             {
                 EnemyStats enemyStats = collision.GetComponent<EnemyStats>();
+                CharacterManager enemyCharacterManager = collision.GetComponent<CharacterManager>();
+                BlockingCollider shield = collision.transform.GetComponentInChildren<BlockingCollider>();
 
-                if(enemyStats != null)
+                if (enemyStats != null)
                 {
                     enemyStats.TakeDamage(currentWeaponDamage);
                 }

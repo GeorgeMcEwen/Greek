@@ -16,11 +16,16 @@ MonoBehaviour:
   itemName: 
   modelPrefab: {fileID: 687991154897989634, guid: 94ed1151cc834e2448898584127e87a3, type: 3}
   isUnarmed: 1
+  physicalDamageAbsorption: 1.2
   Right_Hand_Idle: Right Arm Empty
   Left_Hand_Idle: Left Arm Empty
+  TH_Idle: 
   OH_Light_Attack_01: 
   OH_Light_Attack_02: 
   OH_Heavy_Attack_01: 
+  TH_Light_Attack_01: 
+  TH_Light_Attack_02: 
+  TH_Heavy_Attack_01: 
   baseStamina: 20
   lightAttackMultiplier: 1
   heavyAttackMultiplier: 2

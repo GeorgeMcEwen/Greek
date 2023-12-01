@@ -23,7 +23,6 @@ namespace SG
         public bool isSprinting;
         public bool canDoCombo;
         public bool isInvulnerable;
-        public bool isBlocking;
 
         private void Awake()
         {

@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab48fec9032d93f4a983b7514fb0ce1c, type: 3}
-  m_Name: Spartan_Sword
+  m_Name: Shield
   m_EditorClassIdentifier: 
-  itemIcon: {fileID: 21300000, guid: fcfc6dfec1d00264aaecb14f8d2e935b, type: 3}
-  itemName: Spartan_Sword
-  modelPrefab: {fileID: 2440148388661099209, guid: aa4d5c70db8674d499a49abf47716ab2, type: 3}
+  itemIcon: {fileID: 21300000, guid: 1b4d350f3e2aa614d848ed659cc8493f, type: 3}
+  itemName: Spartan Shield
+  modelPrefab: {fileID: 919132149155446097, guid: f0e94051a0c03e44585b4ad290bbf15e, type: 3}
   isUnarmed: 0
-  physicalDamageAbsorption: 5
-  Right_Hand_Idle: 
-  Left_Hand_Idle: 
-  TH_Idle: 
-  OH_Light_Attack_01: OH_Light_Attack_01
-  OH_Light_Attack_02: OH_Light_Attack_02
-  OH_Heavy_Attack_01: OH_Heavy_Attack_01
+  physicalDamageAbsorption: 50
+  Right_Hand_Idle: Right_Arm_Idle_01
+  Left_Hand_Idle: Left_Arm_Idle_01
+  TH_Idle: TH_Idle_01
+  OH_Light_Attack_01: 
+  OH_Light_Attack_02: 
+  OH_Heavy_Attack_01: 
   TH_Light_Attack_01: 
   TH_Light_Attack_02: 
   TH_Heavy_Attack_01: 
-  baseStamina: 20
+  baseStamina: 10
   lightAttackMultiplier: 1
-  heavyAttackMultiplier: 2
+  heavyAttackMultiplier: 1.2

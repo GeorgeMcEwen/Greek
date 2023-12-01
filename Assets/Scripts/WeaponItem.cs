@@ -11,6 +11,9 @@ namespace SG
         public GameObject modelPrefab;
         public bool isUnarmed;
 
+        [Header("Absorption")]
+        public float physicalDamageAbsorption;
+
         [Header("Idle Animations")]
         public string Right_Hand_Idle;
         public string Left_Hand_Idle;

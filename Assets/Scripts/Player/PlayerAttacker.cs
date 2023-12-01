@@ -7,6 +7,7 @@ namespace SG
     public class PlayerAttacker : MonoBehaviour
     {
         AnimatorHandler animatorHandler;
+        PlayerEquipmentManager playerEquipmentManager;
         PlayerStats playerStats;
         InputHandler inputHandler;
         WeaponSlotManager weaponSlotManager;
@@ -16,6 +17,7 @@ namespace SG
         private void Awake()
         {
             animatorHandler = GetComponentInChildren<AnimatorHandler>();
+            playerEquipmentManager = GetComponent<PlayerEquipmentManager>();
             playerStats = GetComponent<PlayerStats>();
             weaponSlotManager = GetComponentInChildren<WeaponSlotManager>();
             inputHandler = GetComponent<InputHandler>();
@@ -98,6 +100,7 @@ namespace SG
                 return;
 
             animatorHandler.PlayTargetAnimation("straight_sword_th_guard_block_medium_01", false, true);
+            playerEquipmentManager.OpenBlockingCollider();
             playerManager.isBlocking = true;
         }
         #endregion
