@@ -940,7 +940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 148676232}
   clip1: {fileID: 8300000, guid: 39d1bfd7cfa15f14b995ecb473088972, type: 3}
-  clip2: {fileID: 8300000, guid: 39d1bfd7cfa15f14b995ecb473088972, type: 3}
+  clip2: {fileID: 8300000, guid: 94ebc4b0c05df6746a7d52f6f8701914, type: 3}
   clip3: {fileID: 8300000, guid: 39d1bfd7cfa15f14b995ecb473088972, type: 3}
 --- !u!1 &157464065
 GameObject:
