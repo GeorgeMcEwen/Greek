@@ -17,7 +17,7 @@ namespace SG
         private void Awake()
         {
             animatorHandler = GetComponentInChildren<AnimatorHandler>();
-            playerEquipmentManager = GetComponent<PlayerEquipmentManager>();
+            playerEquipmentManager = GetComponentInChildren<PlayerEquipmentManager>();
             playerStats = GetComponent<PlayerStats>();
             weaponSlotManager = GetComponentInChildren<WeaponSlotManager>();
             inputHandler = GetComponent<InputHandler>();
