@@ -4257,11 +4257,11 @@ MonoBehaviour:
   healthLevel: 10
   maxHealth: 0
   currentHealth: 0
-  staminaLevel: 10
+  staminaLevel: 30
   maxStamina: 0
   currentStamina: 0
   isDead: 0
-  staminaRegenerationAmount: 30
+  staminaRegenerationAmount: 45
   staminaRegenTimer: 0
   deathTimer: 0
   currentLevel: 

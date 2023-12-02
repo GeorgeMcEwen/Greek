@@ -26,6 +26,6 @@ MonoBehaviour:
   TH_Light_Attack_01: TH_Light_Attack_01
   TH_Light_Attack_02: TH_Light_Attack_02
   TH_Heavy_Attack_01: TH_Heavy_Attack_01
-  baseStamina: 20
+  baseStamina: 35
   lightAttackMultiplier: 1
   heavyAttackMultiplier: 2
