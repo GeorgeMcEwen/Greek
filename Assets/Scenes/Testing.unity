@@ -3311,6 +3311,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437681973893039481, guid: b5d677ed4238ede468660bfd9b0d99bf, type: 3}
+      propertyPath: maximumAttackRange
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4798930145357058016, guid: b5d677ed4238ede468660bfd9b0d99bf, type: 3}
       propertyPath: m_Name
       value: SkeletonFixed 1
@@ -4144,7 +4148,7 @@ GameObject:
   - component: {fileID: 700927263}
   m_Layer: 9
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23724,6 +23728,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437681973893039481, guid: 8c379cb2d5bbf144f89851678702a34a, type: 3}
+      propertyPath: maximumAttackRange
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4798930145357058016, guid: 8c379cb2d5bbf144f89851678702a34a, type: 3}
       propertyPath: m_Name
       value: SkeletonFixed

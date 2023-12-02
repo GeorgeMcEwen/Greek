@@ -27,6 +27,7 @@ namespace SG
             return maxHealth;
         }
 
+
         public void TakeDamage(int damage)
         {
             if (isDead)

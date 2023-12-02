@@ -15,8 +15,7 @@ namespace SG
                         Vector3 targetDirection = enemyManager.currentTarget.transform.position - transform.position;
             float viewableAngle = Vector3.Angle(targetDirection, transform.forward);
 
-            if (enemyManager.isPreformingAction)
-                return combatStanceState;
+            if (enemyManager.isPreformingAction) return combatStanceState;
 
             if (currentAttack != null)
             {

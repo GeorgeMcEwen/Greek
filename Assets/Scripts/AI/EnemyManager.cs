@@ -88,6 +88,7 @@ namespace SG
                 if (currentRecoveryTime <= 0)
                 {
                     isPreformingAction = false;
+                    currentRecoveryTime = 2;
                 }
             }
         }
