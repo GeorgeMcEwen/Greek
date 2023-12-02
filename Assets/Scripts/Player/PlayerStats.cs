@@ -49,7 +49,7 @@ namespace SG
                 deathTimer += Time.deltaTime;
                 if (deathTimer > 3)
                 {
-                    SceneManager.LoadScene(currentLevel);
+                    SceneManager.LoadScene("Main Menu");
                     deathTimer = 0;
                 }
 
