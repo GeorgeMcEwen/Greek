@@ -22,6 +22,11 @@ public class MainMenuScript : MonoBehaviour
         Destroy(startButton);
     }
 
+    public void GoToMainScene()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
     public void PlayGongSound()
     {
      
